@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Hind|Montserrat');
+
+$heading-font: 'Montserrat',
+sans-serif;
+$body-font: 'Hind',
+sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $heading-font;
+}
+
+nav {
+    a {
+        font-family: $heading-font;
+    }
+}
+
+p {
+    font-family: $body-font;
+}

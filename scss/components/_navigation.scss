@@ -1,0 +1,31 @@
+nav {
+    ul {
+        padding-inline-start: 0px;
+    }
+
+    li {
+        margin: .35em;
+        list-style-type: none;
+    }
+    
+    a{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: .75em;
+        border-radius: 5px;
+    }
+
+    a,
+    & a:link,
+    & a:visited {
+        color: $primary-body-text-clr;
+        text-decoration: none;
+    }
+    
+    li:nth-child(1) a, a:hover, a:active{
+        background-color: $primary-accent;
+        color: $base-text-complement;
+    }
+
+}
