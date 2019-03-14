@@ -25,3 +25,8 @@ $grid-6-bg-clr: #5DA9C6;
 $grid-4-bg-clr: #97E4FA;
 $grid-3-bg-clr: #d7b5ea;
 $grid-5-bg-clr: #9AD6A5;
+
+$breakpoints: (
+    'mobile': 768px,
+    'desktop': 1024px,
+);

@@ -23,7 +23,8 @@ nav {
         text-decoration: none;
     }
     
-    li:nth-child(1) a, a:hover, a:active{
+    //li:nth-child(1) a, 
+    a:hover, a:active{
         background-color: $primary-accent;
         color: $base-text-complement;
     }
