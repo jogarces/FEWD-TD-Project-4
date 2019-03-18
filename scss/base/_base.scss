@@ -6,4 +6,25 @@ a elements*/
 
 p{
     color: $primary-body-text-clr;
+    margin-bottom: 1em;
+}
+
+a,
+a:link {
+    color: $link-clr;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: $base-text-complement;
+}
+
+.blockquote {
+    font-size: 1.2em;
+    line-height: 18px;
+    padding-left: 5px;
+    margin-left: 35px;
+    border-left: solid $primary-accent 5px;
+    border-radius: 5px;
 }

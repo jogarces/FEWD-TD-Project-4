@@ -6,30 +6,12 @@
 // but additional styling may be needed
 // **********************************************
 
-@mixin bp($breakpoint) {
-
-    $min-width: map-get($breakpoints, $breakpoint);
-
-    @if $breakpoint=='mobile' {
-        @media (min-width: $min-width) {
-            @content;
-        }
-    }
-
-    @else if $breakpoint=='desktop' {
-        @media (min-width: $min-width) {
-            @content;
-        }
-    }
-
-}
-
 // grid base class
 .grid {
 
     // .grid__row
     &__row {
-        padding: 1em 10px;
+        padding: 1em 15px;
         display: flex;
         flex-direction: column;
 
@@ -49,8 +31,15 @@
             // selector would be .grid__col--1
             &--#{$i} {
 
-                margin-top: 10px;
-                flex-basis: 100%;
+                $grid-col: &;
+
+                &.theme__colors {
+                    $grid-color: map-get($grid-colors, #{$grid-col});
+                    background-color: $grid-color;
+                    padding: .5em;
+                    margin: 2px;
+                    border-radius: 5px;
+                }
 
                 @include bp('mobile') {
                     // base stlyes applied to all grid columns
@@ -58,16 +47,7 @@
 
                     // make column width a percentage of the column number / total columns
                     flex-basis: #{$i / 12 * 100 + "%"};
-
                 }
-
-                @if($i==3) {
-                    &:nth-child(1) {
-                        align-self: center;
-                        
-                    }
-                }
-
             }
         }
     }
@@ -79,7 +59,7 @@
     // grid__col + grid__col, targets two sibling columns
     & + & {
 
-        @include bp('mobile') {
+        @include bp('mobile', '10px 0 0 10px', null) {
             margin-left: 10px;
         }
 

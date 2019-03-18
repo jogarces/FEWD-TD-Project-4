@@ -1,0 +1,18 @@
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.headline--secondary {
+    margin-bottom: 1em;
+}
+
+.form__label--hidden {
+    display: none;
+}
+
+.form__input {
+   
+    border-bottom: solid 3x #000;
+    
+}

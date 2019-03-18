@@ -1,0 +1,25 @@
+.btn {
+    @each $btn-type in $btn-types {
+        &--#{$btn-type} {
+            $btn-color: map-get($btn-colors, #{$btn-type});
+            background-color: $btn-color;
+            display: block;
+            width: calc(100% - 20px);
+
+            padding-top: .6em;
+            padding-bottom: .4em;
+            margin: 2px 10px 2px 10px;
+        
+            border: none;
+            border-radius: 5px;
+            
+            
+            font-family: $body-font;
+            font-size: 1em;
+            color: white;
+            text-transform: uppercase;
+
+            @include bp('mobile', null, null) {}
+        }
+    }
+}

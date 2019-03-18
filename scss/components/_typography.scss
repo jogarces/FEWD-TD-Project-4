@@ -5,14 +5,6 @@ sans-serif;
 $body-font: 'Hind',
 sans-serif;
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: $heading-font;
-}
-
 nav {
     a {
         font-family: $heading-font;
@@ -21,4 +13,29 @@ nav {
 
 p {
     font-family: $body-font;
+}
+
+.blockquote {
+    font-family: $body-font;
+    color: $primary-body-text-clr;
+    margin-bottom: 1em;
+}
+
+.headline--primary,
+.headline--secondary {
+    font-family: $heading-font;
+    margin-left: 15px;
+}
+
+.headline--primary {
+    color: $primary-accent;
+}
+
+.headline--secondary {
+    color: $primary-body-text-clr;
+}
+
+[class^=grid__col]{
+    font-family: $body-font;
+    color: $grid-text-clr;
 }

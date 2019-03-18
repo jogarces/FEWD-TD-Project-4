@@ -5,8 +5,15 @@ $primary-accent: #7FDEC2;
 $base-text-clr: #000000;
 $base-text-complement: #FFFFFF;
 
-$primary-body-text-clr: lighten($base-text-clr, 30%);
+$primary-body-text-clr: lighten($base-text-clr, 40%);
 $link-clr: #79DAF8;
+
+$btn-types : ('default',
+'success',
+'error',
+'warning',
+'info',
+);
 
 /* Button Colors */
 
@@ -18,15 +25,16 @@ $btn-colors : ('default': #79DAF8,
 );
 
 /* Grid Colors */
-$grid-12-bg-clr: #99E5D2;
-$grid-8-bg-clr: #F0A38A;
-$grid-7-bg-clr: #E1A2A4;
-$grid-6-bg-clr: #5DA9C6;
-$grid-4-bg-clr: #97E4FA;
-$grid-3-bg-clr: #d7b5ea;
-$grid-5-bg-clr: #9AD6A5;
+$grid-colors : ('.grid__col--12': #99E5D2,
+'.grid__col--8': #F0A38A,
+'.grid__col--7': #E1A2A4,
+'.grid__col--6': #5DA9C6,
+'.grid__col--4': #97E4FA,
+'.grid__col--3': #D7B5EA,
+'.grid__col--5': #9AD6A5);
 
-$breakpoints: (
-    'mobile': 768px,
-    'desktop': 1024px,
+$grid-text-clr: #7F7D7E;
+
+$breakpoints: ('mobile': 768px,
+'desktop': 1024px,
 );
